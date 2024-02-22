@@ -8,12 +8,12 @@ const NewRentals = () => {
     <div className='newrentals'>
       <h> NEW RENTALS</h>
       <hr/>
+      
+      <div className="rentals">
       {new_collection.map(( items, i) =>{
         return <Items key={i} id={items.id} name={items.name} image={items.image} new_price={items.new_price} old_price={items.old_price} />
 
       })}
-      <div className="collections">
-
       </div>
     </div>
   )
