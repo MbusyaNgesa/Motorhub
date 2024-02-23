@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import './CSS/CarRental.css'
+import { ShopContext } from '../Context/ShopContext'
 
-const CarRental = () => {
+const CarRental = (props) => {
+  const{all_product} = useContext(ShopContext);
   return (
-    <div>
-      
+    <div className='car-rental'>
+      <img src={props.banner} alt="" />
     </div>
   )
 }
