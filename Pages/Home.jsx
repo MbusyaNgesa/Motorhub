@@ -6,6 +6,7 @@ import NewRentals from '../Components/NewRentals/NewRentals'
 import Newsletter from '../Components/Newsletter/Newsletter'
 
 
+
 const Home = () => {
   return (
     <div>

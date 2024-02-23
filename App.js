@@ -20,8 +20,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/rental' element={<CarRental banner={men_banner} category="rental"/>}/>
-        <Route path='/driver' element={<CarRental banner={women_banner} category="drivers"/>}/>
+        <Route path='/CarRental' element={<CarRental banner={men_banner} category="CarRental"/>}/>
+        <Route path='/drivers' element={<CarRental banner={women_banner} category="driver"/>}/>
         <Route path='/' element={<Home/>}/>
         <Route path='/product' element={<Product/>}>
           <Route path=':productId' element={<Product/>}/>
