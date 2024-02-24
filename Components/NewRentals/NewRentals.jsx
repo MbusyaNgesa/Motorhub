@@ -6,7 +6,7 @@ import Items from '../Items/Items'
 const NewRentals = () => {
   return (
     <div className='newrentals'>
-      <h> NEW RENTALS</h>
+      <h1>NEW RENTALS</h1>
       <hr/>
       
       <div className="rentals">
