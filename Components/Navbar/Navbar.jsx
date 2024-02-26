@@ -1,23 +1,31 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './Navbar.css'
 
 import logo from '../Assests/Assets/logo.png'
 import cart_icon from '../Assests/Assets/cart_icon.png'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../../Context/ShopContext'
+import nav_dropdown from '../Assests/Assets/menu.png'
 
 
 const Navbar = () => {
     const [ menu,setMenu] = useState("home");
     const{getTotalCartItems} = useContext(ShopContext);
+    const menuRef = useRef();
+
+  const dropdown_toggle = (e) => {
+    menuRef.current.classList.toggle('nav-menu-visible');
+    e.target.classList.toggle('open');
+  }
 
   return (
     <div className='navbar'>
       <div className='nav-logo'>
-        <img src={logo} alt=""/>
+        <img src={logo} alt='' />
         <p>MOTORHUB</p>
       </div>
-      <ul className='nav-menu'>
+      <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt="" />
+      <ul ref={menuRef} className='nav-menu'>
         <li onClick={()=>{setMenu("home")}}><Link style={{textDecoration: 'none'}} to='/'> home </Link>{menu==="home"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("about")}}>About{menu==="about"?<hr/>:<></>}</li>
         <li onClick={()=>{setMenu("rental")}}><Link style={{textDecoration: 'none'}} to='/CarRental'> Car Rental </Link>{menu==="rental"?<hr/>:<></>}</li>
