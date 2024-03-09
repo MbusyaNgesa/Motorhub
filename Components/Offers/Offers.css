@@ -7,6 +7,7 @@
     padding: 0px 140px;
     margin-bottom: 150px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    background-color: var(--foreground-color);
 }
 .offers-left{
     flex: 1;
@@ -14,7 +15,7 @@
     justify-content: center;
 }
 .offers-left h1{
-    color: #171717;
+    color: var(--primary-text-color);
     font-size: 80px;
     font-weight: 600;
 }
