@@ -35,3 +35,53 @@
     font-size: 18px;
     font-weight: 500;
 }
+@media(max-width:1280px){
+    .carrental-banner{
+        margin: 20px auto;
+        width: 90%;
+    }
+    .carrental-indexSort{
+        width: 90%;
+        margin: auto;
+    }
+    .carrental-sort{
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .carrental-indexSort p{
+        font-size: 12px;
+    }
+    .carrental-products{
+        width: 90%;
+        margin: 10px auto;
+        row-gap: 40px;
+    }
+    .carrental-products .items{
+        margin: auto;
+    }
+    .carrental-loadmore{
+        margin: 100px auto;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+}
+@media(max-width:800px){
+    .carrental-banner{
+        width: 95%;
+    }
+    .carrental-products{
+        width: 95%;
+    }
+    .carrental-loadmore{
+        margin: 60px auto;
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+    .carrental-products{
+        grid-template-columns: 1fr 1fr;
+    }
+}

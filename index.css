@@ -15,3 +15,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root{
+  --background-color: #f6f6f6;
+  --foreground-color: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+  --primary-text-color: #0a0a0a;
+  --secondary-text-color: #ffffff;
+  --toggle-bg: #c0bca8;
+  --toggle-fg: #e29b03;
+}
+
+[data-theme = "dark"]{
+  --background-color: linear-gradient(180deg, #f7cc11, #e1ffea22 60%);
+  --foreground-color: #161414;
+  --primary-text-color: #f6f6f6;
+  --secondary-text-color: #0a0a0a;
+  --toggle-bg: #283452;
+  --toggle-fg: #00a6ff;
+}

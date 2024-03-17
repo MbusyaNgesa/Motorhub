@@ -1,5 +1,5 @@
-import p1_img from "./product_1.png";
-import p2_img from "./product_2.png";
+import p1_img from "./product_1.jpg";
+import p2_img from "./product_2.jpg";
 import p3_img from "./product_3.png";
 import p4_img from "./product_4.png";
 import p5_img from "./product_5.png";

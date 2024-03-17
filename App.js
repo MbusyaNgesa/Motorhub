@@ -10,7 +10,9 @@ import LoginSignup from'./Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assests/Assets/banner_mens.png'
 import women_banner from './Components/Assests/Assets/banner_women.png'
+import useLocalStorage from 'use-local-storage'
 
+import './index.css'
 
 function App() {
   return (
